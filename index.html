@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ARTEMIX JUMP</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: white;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.8)),
+        url("hero.jpg") center/cover;
+    }
+
+    .hero h1 {
+      font-size: clamp(55px, 10vw, 120px);
+      letter-spacing: 8px;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 22px;
+      color: #ddd;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: white;
+      color: black;
+    }
+
+    section {
+      padding: 100px 10%;
+    }
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 35px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      border-radius: 18px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .number {
+      font-size: 42px;
+      font-weight: bold;
+    }
+
+    .label {
+      margin-top: 10px;
+      color: #aaa;
+    }
+
+    .about {
+      max-width: 800px;
+      line-height: 1.8;
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 650px) {
+      nav .links {
+        display: none;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">ARTEMIX</div>
+
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<div class="hero">
+
+  <div>
+
+    <h1>ARTEMIX JUMP</h1>
+
+    <p>Triple Jump Athlete • 16.50m PB</p>
+
+    <a class="button" href="#about">
+      Discover More
+    </a>
+
+  </div>
+
+</div>
+
+
+<section id="achievements">
+
+  <h2>Performance</h2>
+
+  <div class="stats">
+
+    <div class="card">
+      <div class="number">16.50m</div>
+      <div class="label">Triple Jump PB</div>
+    </div>
+
+    <div class="card">
+      <div class="number">7.57m</div>
+      <div class="label">Long Jump PB</div>
+    </div>
+
+    <div class="card">
+      <div class="number">2019</div>
+      <div class="label">European U20 Champion</div>
+    </div>
+
+    <div class="card">
+      <div class="number">2023</div>
+      <div class="label">Ukrainian Champion</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="about">
+
+  <h2>About Me</h2>
+
+  <div class="about">
+
+    I am a professional triple jump athlete from Ukraine.
+
+    I have represented Ukraine internationally and competed
+    at European, World and NCAA competitions.
+
+    This website is dedicated to my athletic career,
+    competitions, videos and future projects.
+
+  </div>
+
+</section>
+
+
+<section id="contact">
+
+  <h2>Contact</h2>
+
+  <div class="about">
+
+    Instagram:
+    <a href="https://instagram.com/artemix_tj"
+       style="color:white;"
+       target="_blank">
+
+      @artemix_tj
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+  © 2026 ARTEMIX JUMP
+</footer>
+
+</body>
+</html>
