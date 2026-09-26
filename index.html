@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ARTEMIX JUMP</title>
+  <title>ARTEM KONOVALENKO</title>
 
   <style>
     * {
@@ -58,9 +58,10 @@
     }
 
     .hero h1 {
-      font-size: clamp(55px, 10vw, 120px);
-      letter-spacing: 8px;
-    }
+  font-size: clamp(38px, 7vw, 90px);
+  letter-spacing: 4px;
+  white-space: nowrap;
+}
 
     .hero p {
       margin-top: 20px;
@@ -94,10 +95,16 @@
     }
 
     .stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-    }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
     .card {
       background: #151515;
@@ -159,7 +166,7 @@
 
   <div>
 
-    <h1>ARTEMIX JUMP</h1>
+    <h1>ARTEM KONOVALENKO</h1>
 
     <p>Triple Jump Athlete • 16.50m PB</p>
 
@@ -174,19 +181,29 @@
 
 <section id="achievements">
 
-  <h2>Performance</h2>
+  <h2>Triple Jump Performance</h2>
+
+  <section id="performance">
+
+  <h2>Triple Jump Performance</h2>
 
   <div class="stats">
 
     <div class="card">
       <div class="number">16.50m</div>
-      <div class="label">Triple Jump PB</div>
+      <div class="label">Personal Best</div>
     </div>
 
-    <div class="card">
-      <div class="number">7.57m</div>
-      <div class="label">Long Jump PB</div>
-    </div>
+  </div>
+
+</section>
+
+
+<section id="achievements">
+
+  <h2>Achievements</h2>
+
+  <div class="stats">
 
     <div class="card">
       <div class="number">2019</div>
